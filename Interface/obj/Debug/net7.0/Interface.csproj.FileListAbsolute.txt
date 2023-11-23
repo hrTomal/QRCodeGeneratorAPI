@@ -1,0 +1,16 @@
+E:\RnD\QRCodeGeneratorAPI\Interface\bin\Debug\net7.0\Interface.deps.json
+E:\RnD\QRCodeGeneratorAPI\Interface\bin\Debug\net7.0\Interface.dll
+E:\RnD\QRCodeGeneratorAPI\Interface\bin\Debug\net7.0\Interface.pdb
+E:\RnD\QRCodeGeneratorAPI\Interface\bin\Debug\net7.0\Model.dll
+E:\RnD\QRCodeGeneratorAPI\Interface\bin\Debug\net7.0\Model.pdb
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.csproj.AssemblyReference.cache
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.AssemblyInfoInputs.cache
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.AssemblyInfo.cs
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.csproj.CoreCompileInputs.cache
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.csproj.CopyComplete
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.dll
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\refint\Interface.dll
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.pdb
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\ref\Interface.dll
+E:\RnD\QRCodeGeneratorAPI\Interface\obj\Debug\net7.0\Interface.sourcelink.json
