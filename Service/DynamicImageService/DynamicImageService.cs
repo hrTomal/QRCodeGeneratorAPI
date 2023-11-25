@@ -212,7 +212,7 @@ namespace Service.DynamicImageService
                     // Background image
                     Image backgroundImage = LoadImageFromUrl(imageItem.BackgroundImageUrl);
                     // Logo image
-                    Image topLogoImage = LoadImageFromUrl(imageItem.CompanyLogoUrl);
+                    Image topLogoImage = LoadImageFromUrl(dynamicImage.CompanyLogoUrl);
                     // bottom Logo image
                     //Image logoImage = LoadImageFromUrl(imageItem.LeftBottomLogoUrl);
                     // QR image
@@ -256,9 +256,33 @@ namespace Service.DynamicImageService
                             //graphics.DrawImage(logoImage, new Rectangle(0 + padding, dynamicImage.TotalImageHeight - dynamicImage.LeftBottomLogoHeight - padding, dynamicImage.LeftBottomLogoWidth, leftBottomImageHeight));
 
                             // Draw the image in the right bottom corner QR
-                            graphics.DrawImage(qrImage, new Rectangle(imageItem.TotalImageWidth - imageItem.RightBottomImageWidth - padding,
-                                                                        imageItem.TotalImageHeight - imageItem.RightBottomImageHeight - padding,
-                                                                        imageItem.RightBottomImageWidth, imageItem.RightBottomImageHeight  - 35));
+                            Rectangle qrRectangle = new Rectangle(
+                                imageItem.TotalImageWidth - imageItem.RightBottomImageWidth - padding,
+                                imageItem.TotalImageHeight - imageItem.RightBottomImageHeight - padding,
+                                imageItem.RightBottomImageWidth,
+                                imageItem.RightBottomImageHeight - 35);
+
+                            graphics.DrawImage(qrImage, qrRectangle); //QR Image
+
+                            // Draw the text "Scan To Apply" under qrImage
+                            string scanToApplyText = "Scan To Apply";
+                            Font scanToApplyFont = new Font("Arial", 17, FontStyle.Bold); // Adjust font size as needed
+                            SizeF scanToApplyTextSize = graphics.MeasureString(scanToApplyText, scanToApplyFont);
+                            float scanToApplyTextX = imageItem.TotalImageWidth - padding - imageItem.RightBottomImageWidth + 12;
+                            float scanToApplyTextY = imageItem.TotalImageHeight - padding - 37; // Adjust the vertical position
+                            graphics.DrawString(scanToApplyText, scanToApplyFont, textBrushScanToApply, new PointF(scanToApplyTextX, scanToApplyTextY));
+
+                            //For QR Image and text "Scan To Apply" Border
+                            Rectangle combinedRectangle = new Rectangle(
+                                imageItem.TotalImageWidth - imageItem.RightBottomImageWidth - padding,
+                                imageItem.TotalImageHeight - imageItem.RightBottomImageHeight - padding,
+                                imageItem.RightBottomImageWidth,
+                                imageItem.RightBottomImageHeight);
+
+                            // Draw a rectangle border around the QR code
+                            Pen borderPen = new Pen(Color.Gray, 2);
+                            graphics.DrawRectangle(borderPen, combinedRectangle);
+
 
                             float maxJobTitleWidth = 620;
                             float maxJobTitleHeight = 270;
@@ -269,7 +293,7 @@ namespace Service.DynamicImageService
 
                             // Draw the text in the right top corner
                             SizeF jobTitleTextSize = graphics.MeasureString(text, font);
-                            if (jobTitleTextSize.Width > 620)
+                            if (jobTitleTextSize.Width > 620) //For 2 line text
                             {
                                 RectangleF rectF1 = new RectangleF(imageItem.TotalImageWidth - padding - maxJobTitleWidth, padding + (padding/2),
                                                                         maxJobTitleWidth, maxJobTitleHeight);
@@ -277,7 +301,7 @@ namespace Service.DynamicImageService
                                 graphics.DrawString(text, font, textBrush, rectF1, format);
 
                             }
-                            else
+                            else //for 1 line text
                             {
                                 float textX = resultImage.Width - jobTitleTextSize.Width - padding;
                                 float textY = padding * 2; //Top Padding
@@ -285,23 +309,13 @@ namespace Service.DynamicImageService
 
                             }
 
-
-                            // Draw the text "Scan To Apply" under qrImage
-                            string scanToApplyText = "Scan To Apply";
-                            Font scanToApplyFont = new Font("Arial", 17, FontStyle.Bold); // Adjust font size as needed
-                            SizeF scanToApplyTextSize = graphics.MeasureString(scanToApplyText, scanToApplyFont);
-                            float scanToApplyTextX = imageItem.TotalImageWidth - padding - imageItem.RightBottomImageWidth + 15;
-                            float scanToApplyTextY = imageItem.TotalImageHeight - padding - 30; // Adjust the vertical position
-                            graphics.DrawString(scanToApplyText, scanToApplyFont, textBrushScanToApply, new PointF(scanToApplyTextX, scanToApplyTextY));
-
-
                             if (!string.IsNullOrEmpty(imageItem.Deadline))
                             {
                                 // Draw the text "Scan To Apply" under qrImage
                                 textColorDeadline = ColorTranslator.FromHtml("#D33E27");
                                 textBrushDeadline = new SolidBrush(textColorDeadline);
                                 string deadlineText = $"Deadline : {imageItem.Deadline}";
-                                Font deadlineFont = new Font("Arial", 17, FontStyle.Bold); // Adjust font size as needed
+                                Font deadlineFont = new Font("Arial", 20, FontStyle.Bold); // Adjust font size as needed
                                 SizeF deadlineTextSize = graphics.MeasureString(deadlineText, deadlineFont);
                                 float deadlineTextX = imageItem.TotalImageWidth - padding - deadlineTextSize.Width - 15;
                                 float deadlineTextY = 220; // Adjust the vertical position
@@ -371,10 +385,10 @@ namespace Service.DynamicImageService
                                                         ? defaultBackgroundImageUrl : imageItem.BackgroundImageUrl;
 
                 // Logo image
-                imageItem.CompanyLogoUrl = imageItem.CompanyLogoUrl == ""
-                                                        || imageItem.CompanyLogoUrl == "string"
-                                                        || imageItem.CompanyLogoUrl == null
-                                                        ? defaultToplogoImageUrl : imageItem.CompanyLogoUrl;
+                dynamicImage.CompanyLogoUrl = dynamicImage.CompanyLogoUrl == ""
+                                                        || dynamicImage.CompanyLogoUrl == "string"
+                                                        || dynamicImage.CompanyLogoUrl == null
+                                                        ? defaultToplogoImageUrl : dynamicImage.CompanyLogoUrl;
 
                 // Logo image
                 //dynamicImage.LeftBottomLogoUrl = dynamicImage.LeftBottomLogoUrl == ""

@@ -6,6 +6,7 @@ namespace QRCodeGeneratorAPI.Models
     {
         public string JobID { get; set; }
         public string JobTitle { get; set; }
+        public string? CompanyLogoUrl { get; set; }
         public List<ImageInformation> ImageInformation { get; set; }
     }
 
@@ -15,7 +16,6 @@ namespace QRCodeGeneratorAPI.Models
         public string LinkType { get; set; }
         public string? Deadline { get; set; }
         public bool isWithLinkedInText { get; set; }
-        public string? CompanyLogoUrl { get; set; }
         //public string? LeftBottomLogoUrl { get; set; }
         public string? BackgroundImageUrl { get; set; }
         //public string? RightBottomImageUrl { get; set; }

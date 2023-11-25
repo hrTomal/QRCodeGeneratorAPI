@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qlR8FEjGX5QKNDyURxZicK9ArgIhXUvsPsjrAxlj8KWfyOK6rnD23n3YETowTXvY1LSPseKSPdyFDXYTgVnVCQ==",
+  "dgSpecHash": "FnEUCfHGLgqekX3xIP0KvSzyi346yP/JhSafajZT7a1aTIo7d+XwnLQJmjsMLK+/PwqeQ70EHOrePFRj2sFe4w==",
   "success": true,
-  "projectFilePath": "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj",
+  "projectFilePath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
