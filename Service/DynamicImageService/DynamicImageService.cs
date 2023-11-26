@@ -4,6 +4,7 @@ using System.Net;
 using System.Drawing.Imaging;
 using Interface.IService;
 using Model.DynamicImage;
+using System.Globalization;
 
 namespace Service.DynamicImageService
 {
@@ -257,7 +258,7 @@ namespace Service.DynamicImageService
 
                             // Draw the image in the right bottom corner QR
                             Rectangle qrRectangle = new Rectangle(
-                                imageItem.TotalImageWidth - imageItem.RightBottomImageWidth - padding,
+                                imageItem.TotalImageWidth - imageItem.RightBottomImageWidth - padding - 10,
                                 imageItem.TotalImageHeight - imageItem.RightBottomImageHeight - padding,
                                 imageItem.RightBottomImageWidth,
                                 imageItem.RightBottomImageHeight - 35);
@@ -268,13 +269,13 @@ namespace Service.DynamicImageService
                             string scanToApplyText = "Scan To Apply";
                             Font scanToApplyFont = new Font("Arial", 17, FontStyle.Bold); // Adjust font size as needed
                             SizeF scanToApplyTextSize = graphics.MeasureString(scanToApplyText, scanToApplyFont);
-                            float scanToApplyTextX = imageItem.TotalImageWidth - padding - imageItem.RightBottomImageWidth + 12;
+                            float scanToApplyTextX = imageItem.TotalImageWidth - padding - imageItem.RightBottomImageWidth + 12 - 10;
                             float scanToApplyTextY = imageItem.TotalImageHeight - padding - 37; // Adjust the vertical position
                             graphics.DrawString(scanToApplyText, scanToApplyFont, textBrushScanToApply, new PointF(scanToApplyTextX, scanToApplyTextY));
 
                             //For QR Image and text "Scan To Apply" Border
                             Rectangle combinedRectangle = new Rectangle(
-                                imageItem.TotalImageWidth - imageItem.RightBottomImageWidth - padding,
+                                imageItem.TotalImageWidth - imageItem.RightBottomImageWidth - padding - 10,
                                 imageItem.TotalImageHeight - imageItem.RightBottomImageHeight - padding,
                                 imageItem.RightBottomImageWidth,
                                 imageItem.RightBottomImageHeight);
@@ -311,10 +312,17 @@ namespace Service.DynamicImageService
 
                             if (!string.IsNullOrEmpty(imageItem.Deadline))
                             {
+
+                                // Convert the deadline string to DateTime
+                                DateTime deadlineDate = DateTime.ParseExact(imageItem.Deadline, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+                                // Format the deadlineDate to the desired format
+                                string formattedDeadline = deadlineDate.ToString("dd MMM yyyy");
+
                                 // Draw the text "Scan To Apply" under qrImage
                                 textColorDeadline = ColorTranslator.FromHtml("#D33E27");
                                 textBrushDeadline = new SolidBrush(textColorDeadline);
-                                string deadlineText = $"Deadline : {imageItem.Deadline}";
+                                string deadlineText = $"Deadline : {formattedDeadline}";
                                 Font deadlineFont = new Font("Arial", 20, FontStyle.Bold); // Adjust font size as needed
                                 SizeF deadlineTextSize = graphics.MeasureString(deadlineText, deadlineFont);
                                 float deadlineTextX = imageItem.TotalImageWidth - padding - deadlineTextSize.Width - 15;
@@ -360,7 +368,7 @@ namespace Service.DynamicImageService
                 imageItem.RightBottomImageWidth = imageItem.RightBottomImageWidth == 0 ? 190 : imageItem.RightBottomImageWidth; //QR
                 imageItem.RightBottomImageHeight = imageItem.RightBottomImageHeight == 0 ? 225 : imageItem.RightBottomImageHeight; //QR
 
-                imageItem.JobTitleTextSize = imageItem.JobTitleTextSize == 0 ? 30 : imageItem.JobTitleTextSize;
+                imageItem.JobTitleTextSize = imageItem.JobTitleTextSize == 0 ? 32 : imageItem.JobTitleTextSize;
                 imageItem.Padding = imageItem.Padding == 0 ? 60 : imageItem.Padding;
 
                 string defaultBackgroundImageUrl;

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Interface\\Interface.csproj": {}
+    "E:\\RnD\\QRCodeGeneratorAPI\\Interface\\Interface.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Interface\\Interface.csproj": {
+    "E:\\RnD\\QRCodeGeneratorAPI\\Interface\\Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Interface\\Interface.csproj",
+        "projectUniqueName": "E:\\RnD\\QRCodeGeneratorAPI\\Interface\\Interface.csproj",
         "projectName": "Interface",
-        "projectPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Interface\\Interface.csproj",
-        "packagesPath": "C:\\Users\\hrtom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Interface\\obj\\",
+        "projectPath": "E:\\RnD\\QRCodeGeneratorAPI\\Interface\\Interface.csproj",
+        "packagesPath": "C:\\Users\\AD-IT Tomal\\.nuget\\packages\\",
+        "outputPath": "E:\\RnD\\QRCodeGeneratorAPI\\Interface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\hrtom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AD-IT Tomal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +31,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj"
+              "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj": {
+                "projectPath": "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj"
               }
             }
           }
@@ -62,24 +62,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj": {
+    "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj",
+        "projectUniqueName": "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\hrtom\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\obj\\",
+        "projectPath": "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\AD-IT Tomal\\.nuget\\packages\\",
+        "outputPath": "E:\\RnD\\QRCodeGeneratorAPI\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\hrtom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AD-IT Tomal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1214,23 +1214,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hrtom\\.nuget\\packages\\": {},
+    "C:\\Users\\AD-IT Tomal\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI.csproj",
+      "projectUniqueName": "E:\\RnD\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI.csproj",
       "projectName": "QRCodeGeneratorAPI",
-      "projectPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI.csproj",
-      "packagesPath": "C:\\Users\\hrtom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI\\obj\\",
+      "projectPath": "E:\\RnD\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI.csproj",
+      "packagesPath": "C:\\Users\\AD-IT Tomal\\.nuget\\packages\\",
+      "outputPath": "E:\\RnD\\QRCodeGeneratorAPI\\QRCodeGeneratorAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\hrtom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AD-IT Tomal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1244,14 +1244,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Interface\\Interface.csproj": {
-              "projectPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Interface\\Interface.csproj"
+            "E:\\RnD\\QRCodeGeneratorAPI\\Interface\\Interface.csproj": {
+              "projectPath": "E:\\RnD\\QRCodeGeneratorAPI\\Interface\\Interface.csproj"
             },
-            "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Model\\Model.csproj"
+            "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj": {
+              "projectPath": "E:\\RnD\\QRCodeGeneratorAPI\\Model\\Model.csproj"
             },
-            "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\hrtom\\Desktop\\DeliveryTiger\\QRCodeGeneratorAPI\\Service\\Service.csproj"
+            "E:\\RnD\\QRCodeGeneratorAPI\\Service\\Service.csproj": {
+              "projectPath": "E:\\RnD\\QRCodeGeneratorAPI\\Service\\Service.csproj"
             }
           }
         }
@@ -1302,7 +1302,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

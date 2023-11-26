@@ -9,3 +9,15 @@ C:\Users\hrtom\Desktop\DeliveryTiger\QRCodeGeneratorAPI\Repository\obj\Debug\net
 C:\Users\hrtom\Desktop\DeliveryTiger\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\refint\Repository.dll
 C:\Users\hrtom\Desktop\DeliveryTiger\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.pdb
 C:\Users\hrtom\Desktop\DeliveryTiger\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\ref\Repository.dll
+E:\RnD\QRCodeGeneratorAPI\Repository\bin\Debug\net7.0\Repository.deps.json
+E:\RnD\QRCodeGeneratorAPI\Repository\bin\Debug\net7.0\Repository.dll
+E:\RnD\QRCodeGeneratorAPI\Repository\bin\Debug\net7.0\Repository.pdb
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.sourcelink.json
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.dll
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\refint\Repository.dll
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\Repository.pdb
+E:\RnD\QRCodeGeneratorAPI\Repository\obj\Debug\net7.0\ref\Repository.dll
